@@ -69,7 +69,7 @@ The game consists of the following Python files:
 2. `prompt_handling.py`: Handles the creation and management of prompts for the GPT-3.5 API, as well as the Text-to-Speech functions.
 3. `game_text.py`: Contains simple utility functions for displaying game text.
 
-Additionally, there is an `assets` folder containing an MP3 file for background music, which requires a global installation of FFmpeg to play. If you don't want to play the background music, you can comment out the audio line in `main.py`.
+Additionally, there is an `assets` folder containing an MP3 file for intro music, which requires a global installation of FFmpeg to play. If you don't want to play the background music, you can comment out the audio line in `main.py`.
 
 ## Acknowledgements
 

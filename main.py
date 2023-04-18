@@ -36,7 +36,7 @@ def main(fast_tts : bool):
 
     # game title screen
     print_titles()
-    song = AudioSegment.from_mp3('assets/load_music.mp3')
+    song = AudioSegment.from_mp3('assets/intro_music.mp3')
     playback.play(song)
     print_start_msg()
 
