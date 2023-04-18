@@ -21,7 +21,7 @@ def create_setup_prompts():
     """
     create_prompt('system', setup_prompt)
     
-    # This is empty user prompt stops GPT from hallucinating itself as the user AND the narrator and ensures the game begins correctly
+    # This is empty user prompt stops GPT from hallucinating itself as both the user AND the narrator and ensures the game begins correctly
     create_prompt("user", "")
 
 def create_prompt(speaker, prompt):
@@ -65,4 +65,4 @@ def generate_response():
     
 def _estimate_tokens(text):
     """Estimates the amount of tokens being used. 1 token ~= ¾ words """
-    return len(text.split(' '))*1.33
+    return len(text.split(' ')) * 1.33
