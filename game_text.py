@@ -2,6 +2,7 @@
 from time import sleep
 
 def print_titles():
+    """Prints in bold yellow"""
     title="""\033[1;33m
  ,adPPYb,      ,adPPPYb,     ,adPPPYb,     ,adPPYb,      ,adPPYba,    88       88   88
 a8"    `Y8    a8"     `Y8   a8"     `Y8   a8"    `Y8    a8"     "8a   88       88   88
@@ -22,6 +23,7 @@ a8"    `Y8    a8"     `Y8   a8"     `Y8   a8"    `Y8    a8"     "8a   88       8
         sleep(0.15)
 
 def print_start_msg():
+    """Prints in yellow"""
     print("""
     \033[33m                                      PRESS ENTER TO BEGIN
         \033[00m
