@@ -17,13 +17,11 @@ from game_text import (
     print_titles,
     print_start_msg
 )
-# from time import sleep
 
 # choose the text to speech engine for the narrators voice. fast_tts = True will use a local install of pyttsx3- quicker, but inferior. fast_tts = False will use elevenlabs AI using their API
 def main(fast_tts : bool):
     """The game engine"""
     # game initialisation
-    # os.system('clear')
     dotenv.load_dotenv()
     openai.api_key = os.getenv('OPENAI_KEY')
 
@@ -35,8 +33,6 @@ def main(fast_tts : bool):
         # The voice name can be customised. See docs
         engine = user.get_voices_by_name('Josh')[0]
         narrator_speak = narrator_speak_elevenlabs
-
-    # sleep(6)
 
     # game title screen
     print_titles()
